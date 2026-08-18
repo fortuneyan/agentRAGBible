@@ -1,0 +1,7 @@
+# WorkBuddy working directory
+.workbuddy/
+
+# Python
+__pycache__/
+*.pyc
+_verify_fixes.py
