@@ -145,6 +145,8 @@ def retrieve_with_cache(query: str, top_k: int = 10) -> list[dict]:
     return json.loads(cached)
 ```
 
+> 推理型系统（第 15 章）在缓存之上还需要"三级记忆体系"：会话级缓存 / 沉淀级记忆 / 指纹级去重，详见第 15 章 15.4.4。
+
 ### CLI 结果缓存（行动 Agent 只读操作）
 
 对幂等、只读的 CLI 调用（如 `ls`、`cat`、`--json` 查询），结果可缓存以避免重复执行与重复开销。

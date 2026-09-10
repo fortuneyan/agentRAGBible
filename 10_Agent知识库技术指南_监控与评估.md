@@ -103,7 +103,7 @@ class KBEvaluator:
         """
         回答质量评估。
         简单子串匹配过宽（UP-008a）：这里改用【关键词集合命中】，
-        生产环境建议进一步升级为 LLM-as-judge。
+        生产环境建议进一步升级为 LLM-as-judge。在线单次问答的质量门（节点自审 / 工具级确定性审核 / 独立 Agent 盲评）见第 15 章 15.6。
         """
         total = len(test_cases)
         if total == 0:

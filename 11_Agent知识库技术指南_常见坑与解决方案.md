@@ -288,6 +288,8 @@ def check_confidence(answer: str, context: str) -> float:
     return in_context / len(keywords) if keywords else 0
 ```
 
+> 这是"止血"方案，缓解但不根治。系统性升级路线（递归分解、证据门控、三层审核、过程数据化）见第 15 章 Agent 推理架构。
+
 ---
 
 ## 坑9：数据导入失败

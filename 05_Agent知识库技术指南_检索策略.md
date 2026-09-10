@@ -277,6 +277,7 @@ class IntentClassifier:
 | `tool_query` | 检索 `type=tool` 的文档块 | 问"怎么用" |
 | `tool_execute` | 进入新增的**行动 Agent 流程**（第 14 章） | 直接执行 |
 | `multi_step` | 进入新增的**多步规划流程**（第 14 章） | 复合任务 |
+| `complex_reasoning` | 进入**推理架构**（第 15 章）：递归分解 → 证据门控 → 聚合 | 多实体比较、因果分析类复合问题 |
 
 > 该分类器是行动 Agent（第 14 章）的第一环；它本身不执行任何操作，只做"该走 RAG 还是该走 CLI"的判决。
 
